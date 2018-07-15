@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block body %}
+<input id="fileupload" type="file" name="files[]" data-url="/save-file" multiple>
+
+<br />
+<br />
+<div id="progress"> Already send <span></span> Mb</div>
+
+<br />
+<br />
+<div id="finished">File was successfully uploaded. Total size is <span></span> Mb</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="static/jquery-file-upload/js/vendor/jquery.ui.widget.js"></script>
+<script src="static/jquery-file-upload/js/jquery.fileupload.js"></script>
+<script src="static/jquery-file-upload/js/jquery.iframe-transport.js"></script>
+
+<script src="static/upload-chunks.js"></script>
+{% endblock %}

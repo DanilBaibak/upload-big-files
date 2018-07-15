@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block body %}
+    <table>
+        <tr>
+            <th style="width: 45%">File name</th>
+            <th style="width: 20%">Load time</th>
+            <th style="width: 10%">File size</th>
+        </tr>
+        {% for file in files %}
+            <tr>
+                <td><a href="{{ url_for('download', filename=file[0]) }}" target="_blank">{{ file[0] }}</a></td>
+                <td>{{ file[1] }}</td>
+                <td>{{ file[2] }} Mb</td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}
