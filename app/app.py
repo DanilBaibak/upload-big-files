@@ -6,8 +6,6 @@ from scripts.file_utils import STATUS_FAILED
 from os.path import realpath, dirname, isfile, join
 
 
-UPLOAD_FOLDER = 'uploads'
-
 app = Flask(__name__)
 sess = Session()
 
