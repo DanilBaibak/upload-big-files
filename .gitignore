@@ -1,5 +1,5 @@
 app/uploads/*
-!api/uploads/.gitkeep
+!app/uploads/.gitkeep
 .idea/
 flask_session
 
